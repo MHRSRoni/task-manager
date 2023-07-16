@@ -1,16 +1,17 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import LoginForm from './components/LoginForm'
-// import InputField from './components/InputField'
-import SignUpForm from './components/SignUpForm'
 import Signup from './pages/Signup'
+import Login from './pages/Login'
 
 function App() {
 
   return (
-    <>
-    <Signup/>
-    {/* <LoginForm /> */}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/signup' Component={Signup}/>
+        <Route path='/' Component={Login} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

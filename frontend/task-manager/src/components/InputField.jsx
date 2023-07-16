@@ -6,7 +6,7 @@ import {Input, InputGroup } from 'rsuite';
 function InputField(props) {
   const pStyle = {
     textAlign: 'start',
-    color: 'black',
+    color: '#0d1b2a',
     fontWeight: 'bold',
     marginBottom: '4px',
   };
